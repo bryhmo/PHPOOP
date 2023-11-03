@@ -221,9 +221,7 @@ spl_autoload_register();
     
  }
  
- ?>
-
-<?php
+ 
 
 // Your custom class dir
 define('CLASS_DIR', 'class/')
@@ -236,4 +234,3 @@ spl_autoload_extensions('.class.php');
 
 // Use default autoload implementation
 spl_autoload_register();
-?>
