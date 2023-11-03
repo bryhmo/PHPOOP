@@ -2,10 +2,10 @@
 
 class LoginAuth
 {
-    public $userName ;
-    public $email ;
-    public $password;
-    public $repassword ;
+    public string $userName ;
+    public string $email ;
+    public string $password;
+    public string $repassword ;
 
     function __construct(string $UserName, string $email, string $password, string $repassword)
     {
@@ -82,6 +82,25 @@ $myUser = new $UserLoginDetails;
 
 
 
+class userRegistration extends LoginAuth 
+{
+    public  string $firstName;
+    public string $lastName;
+
+
+    public  function __construct( string $firtName,string $lastName ,string $userName, string $email, string $password, string $repassword)
+    {
+        parent::__construct($userName, $email, $password, $repassword);
+        $this->firstName = $firtName;
+        $this->lastName = $lastName;
+        
+        
+    }
+
+    
+}
+
+$userRegistration = new userRegistration('aamen','mr','bryhmo','brimo@gmail.com','1234','111');
 
 
 
