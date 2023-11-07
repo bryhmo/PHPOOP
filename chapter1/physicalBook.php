@@ -39,6 +39,11 @@ class physicalBook
         return $this->weight;
     }
 
+    public function getPriceAsCurrency():string
+    {
+        return "$".$this->price/100 ;
+
+    }
 
 
 
