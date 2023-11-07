@@ -21,10 +21,10 @@ class test {
     const bool = true;
 }
 var_dump(
-    (new test())::arr,
-    (new test())::string,
-    (new test())::int,
-    (new test())::bool,
+    (new test(6))::arr,
+    (new test(6))::string,
+    (new test(6))::int,
+    (new test(6))::bool,
 );
 
 ?>
