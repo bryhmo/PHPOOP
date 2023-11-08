@@ -42,3 +42,4 @@ $class2 = new ConcreteClass2;
 $class2->printOut();
 echo $class2->prefixValue('FOO_') ."\n";
 ?>
+
